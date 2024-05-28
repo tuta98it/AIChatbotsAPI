@@ -1,4 +1,6 @@
-﻿namespace Common.Utilities
+﻿using Erp.Common.Models;
+
+namespace Common.Utilities
 {
     public static class ChangeDetect
     {
@@ -126,8 +128,8 @@
                         PropertyName = matchingProperty.Name,
                         OldValue = oldValue,
                         NewValue = newValue,
-                        UpdatedByUsername = user?.Username ?? "",
-                        UpdatedByFullname = user?.Name ?? ""
+                        UpdatedByUsername = user?.UserName ?? "",
+                        //UpdatedByFullname = user?.UserName ?? ""
                     });
                 }
             }
